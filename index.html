@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Creation</title>
+    <script src="./scripts/model.js" type="text/javascript"></script>
+    <script src="./scripts/controller.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style\style.css">
+</head>
+<body>
+    <div id="characterEditArea">
+        <h1 id="formTitle"></h1>
+        <form name="editForm" id="editFormArea">
+            <div class="grid-container">
+                <div class="grid-container2" id="userEditArea">
+                    <div class="grid-item">
+                        <label for="userName">Character Name:</label>
+                        <input type="text" id="userName" name="firstNameEdit">
+                    </div>
+                    <div>
+                        <label id="userNameError">&nbsp;</label>
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="userRace">Race:</label>
+                        <select name="userRace" id="userRace">
+                            <option value="Human">Human</option>
+                            <option value="Fairy">Fairy</option>
+                            <option value="Giant">Giant</option>
+                            <option value="Goddess">Goddess</option>
+                            <option value="Demon">Demon</option>
+                        </select>
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="userClass">Class:</label>
+                        <select name="userClass" id="userClass">
+                            <option value="Knight">Knight</option>
+                            <option value="Sorcerer">Sorcerer</option>
+                            <option value="Assassin">Assassin</option>
+                            <option value="Pyromancer">Pyromancer</option>
+                            <option value="Cleric">Cleric</option>
+                        </select>
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="gender">Gender:</label>
+                        <label><input type="radio" name="gender" value="male" id="genderMaleRadio" />Male</label>
+                        <label><input type="radio" name="gender" value="female" id="genderFemaleRadio" />Female</label>
+                        
+                    </div>
+                    <div>
+                        <label id="genderError">&nbsp;</label>
+                    </div>
+
+                    <div class="grid-item">
+                        <label>
+                            <input type="checkbox" name="rightHanded" />
+                            Right Handed? 
+                        </label>
+                    </div>
+
+                </div>
+                <div class="grid-container1" id="statEditArea">
+                    <label for="level">Level:</label>
+                    <input type="number" id="level" class="userStats" value="" name="level">
+                    
+                    <label for="strength">Strength:</label>
+                    <input type="number" id="strength" class="userStats" value="" name="strength">
+                    
+                    <label for="dexterity">Dexterity:</label>
+                    <input type="number" id="dexterity" class="userStats" value="" name="dexterity">
+                    
+                    <label for="intelligence">Intelligence:</label>
+                    <input type="number" id="intelligence" class="userStats" value="" name="intelligence">
+                
+                    <label for="luck">Luck:</label>
+                    <input type="number" id="luck" class="userStats" value="" name="luck">
+
+                    <div>
+                        <button type="button" id="reRoll" value="Roll">Roll</button>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="confirmBtn" name="confirmBtn" />
+                        Confirm 
+                    </div>
+                    <div>
+                        <label id="confirmBtnError">&nbsp;</label>
+                    </div>
+                </div>
+                
+                <div>
+                    &nbsp;
+                </div>
+                <div class="grid-item">
+                    <button type="button" id="updateBtn">Update</button>
+                    <button type="button" id="createBtn">Create</button>
+                    <button type="button" id="cancelBtn">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+
+    <div id="characterListArea">
+        <h1>Character Registration</h1>
+        <button type="button" id=newBtn>New Character</button>
+        <table id="characterTable">
+            <tr>
+                <th class="topTable">Name</th>
+                <th class="topTable">Race</th>
+                <th class="topTable">Class</th>
+                <th class="topTable">Gender</th>
+                <th class="topTable">Level</th>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <script>
+        modelCreateCharacter("Papa Juan", "Fairy", "Knight", true, true, 2, 5, 5, 5, 5)
+        modelCreateCharacter("Betty White", "Human", "Assassin", false, true, 10, 4, 4, 4, 4)
+        modelCreateCharacter("Chicken" , "Demon", "Knight", true, false, 5, 3, 3, 3, 3)
+        modelCreateCharacter("Bubbles", "Giant", "Pyoromancer", true, true, 8, 6, 6, 6, 6)
+        
+        onPageLoad();
+    </script>
+</body>
+</html>
+
+

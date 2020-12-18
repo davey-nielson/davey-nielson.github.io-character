@@ -1,0 +1,150 @@
+#characterListArea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: #F7F7F7;
+    padding: 25px;
+}
+
+th {
+    background-color: #2196F3;
+    padding: 10px;
+    width: auto;
+}
+
+#characterTable {
+    width: 700px;
+}
+
+
+#listAreaTitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#characterEditArea {
+    background-color: #F7F7F7;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 10px 18px #888888;
+    height: 450px;
+    width: 750px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    height: 400px;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding: 10px;
+    height: 220px;
+   
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    width: 50%;
+}
+
+#userEditArea {
+    width: 300px;
+    padding: 25px;
+}
+
+#statEditArea {
+    padding: 25px;
+}
+
+input[type=number]{
+    width: 30px;
+} 
+
+#userNameError {
+    color: red;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#genderError {
+    color: red;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#formTitle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Buttons */
+#newBtn {
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#confirmBtnError{
+    color: red;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#createBtn {
+    border-radius: 3px;
+    margin: 10px;
+    margin-left: 150px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+}
+
+#cancelBtn {
+    border-radius: 3px;
+    margin: 10px;
+    background-color: sienna;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#updateBtn {
+    border-radius: 3px;
+    margin: 10px;
+    margin-left: 150px;
+    background-color: blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+}
+
+#editBtn {
+    background-color: blue;
+    color: white;
+}
+
+#deleteBtn {
+    background-color: red;
+    color: white;
+}
+
+
