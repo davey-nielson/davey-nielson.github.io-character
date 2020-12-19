@@ -98,21 +98,6 @@ function onUpdateBtnClicked(id) {
     tr.childNodes[3].innerText = character.male? "Male" : "Female"
     tr.childNodes[4].innerText = character.level
 
-
-    //Update the row in the DOM
-    // document.getElementById("rowName").innerText = character.charName
-    // document.getElementById("rowRace").innerText = character.charRace
-    // document.getElementById("rowClass").innerText = character.charClass
-    // document.getElementById("rowGender").innerText = character.male? "Male" : "Female"
-    // document.getElementById("rowlevel").innerText = character.level
-
-    // //Updates the rest of the stats
-    // character.strength.innerText = character.strength
-    // character.dexterity.innerText = character.dexterity
-    // character.intelligence.innerText = character.intelligence
-    // character.luck.innerText = character.luck
-    // character.rightHanded = character.rightHanded
-
     clearInputForm();
 }
 
@@ -172,11 +157,11 @@ function onEditBtnClicked(id) {
 function onDeleteBtnClicked(id) {
     var character = modelGetCharacter(id);
     if (!character) {
-        alert("Unable to find character ID=" + id)
+        alert("Unable to find character ID= " + id)
         return;
     }
 
-    if (!confirm("Are you sure you want to delete" +
+    if (!confirm("Are you sure you want to delete " +
         character.charName + "?")) {
             return;
     }
@@ -331,10 +316,6 @@ function editValidateControls() {
         document.getElementById("genderError").innerText = "";
     }
 
-    // if (document.getElementById("reRoll").innerHTML !== "Re-Roll") {
-    //     document.getElementById("confirmBtnError").innerText = "*Please roll your stats.";
-    //     isValidated = false;
-    // }
     if (!form.confirmBtn.checked) {
         document.getElementById("confirmBtnError").innerText = "*Please confirm your stats.";
         isValidated = false;
